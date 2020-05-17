@@ -90,7 +90,7 @@ void cornernessHarris()
 	cv::cvtColor(img, img, cv::COLOR_BGR2GRAY); // convert to grayscale
 
 	// Detector parameters
-	int blockSize = 2;     // for every pixel, a blockSize × blockSize neighborhood is considered
+	int blockSize = 2;     // for every pixel, a blockSize Ã— blockSize neighborhood is considered
 	int apertureSize = 3;  // aperture parameter for Sobel operator (must be odd)
 	int minResponse = 100; // minimum value for a corner in the 8bit scaled response matrix
 	double k = 0.04;       // Harris parameter (see equation for details)
@@ -274,7 +274,7 @@ void descKeypoints1()
 	imshow(windowName, visImage);
 	cv::waitKey(0);
 
-
+	
 	//detector = cv::xfeatures2d::SIFT::create(); 
 	//vector<cv::KeyPoint> kptsSIFT;
 
